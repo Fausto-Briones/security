@@ -80,5 +80,4 @@ router.post('/generateToken', async (req, res,next) => {
 
 });
 
-
 module.exports = router;

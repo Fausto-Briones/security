@@ -4,17 +4,17 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-const dotenv = require('dotenv');
-dotenv.config();
-
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-
 /* REFERENCIA AL MÓDULO */
 const swaggerUi = require('swagger-ui-express')
 
 /* REFERENCIA AL ARCHIVO GENERADO */
 const swaggerFile = require('./swagger_output.json')
+
+const dotenv = require('dotenv');
+dotenv.config();
+
+var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/users');
 
 var app = express();
 
